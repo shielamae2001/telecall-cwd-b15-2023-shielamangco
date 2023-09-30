@@ -1,0 +1,209 @@
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #1976d2;
+}
+p {
+    color: #616161;
+    font-weight: 400;
+}
+/* Button for Log Out */
+#button1{
+    width: 100px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 10px 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #42a5f5;
+    color: #0d47a1;
+}
+/* Button for Learn More */
+#button{
+    width: 150px;
+    height: 60PX;
+    padding: 10px 0;
+    text-align: center;
+    margin: 10px 5px;
+    border-radius: 15px;
+    font-weight: bold;
+    border: 2px solid #42a5f5;
+    color: #0d47a1;
+    font-size: large;
+    
+}
+/* Get in Touch */
+#bottom-text{
+    position: absolute;
+    text-align: center;
+    color: #0d47a1; 
+    font-size: 24px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-decoration: underline;
+}
+#bottom-text:hover{
+    color:#42a5f5;
+}
+/* Navbar */
+nav a{
+    font-size: 18px;
+    color: #03a9f4;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 9px;
+    transition: 3s;
+}
+nav ul a{
+    color: #03a9f4;
+}
+.sidenav li > a:hover{
+    color: #03a9f4;
+}
+.dropdown-content:hover{
+    color: #03a9f4;
+}
+.dropdown-content li>a{
+    color: #03a9f4;
+}
+nav .brand-logo{
+    color: #03a9f4;
+}
+nav a:hover{
+    color: #0d47a1;
+}
+  /* Add custom CSS for the navbar and dropdown text color */
+
+/* NavLogo Color */
+.travel-text{
+    color: #1976d2;
+}
+.darker-text{
+    color: #42a5f5;
+}
+
+/* Slider Video */
+.back-video{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* Search Section Input */
+.section-search input {
+    padding: 5px !important;
+    font-size: 18px !important;
+    width: 80% !important;
+    border: #f4f4f4 1px solid !important;
+  }
+
+/* Search background */
+.section-search{
+    background-image: url('images/sliderimage4.jpg');
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+/* Crad Panel in Search Section */
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
+    color: #3411b2;
+    font-style: italic;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) :hover{
+color: #00b0ff;
+}
+.card:hover {
+    transform: scale(1.05); /* Increase the size of the card on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+}
+.card-image img{
+    height: 200px;
+}
+.card-content{
+    max-height: 200px;
+    overflow: auto;
+}
+/* Text in popular Places */
+.text{
+    color: #42a5f5;
+}
+/* booking button */
+.btn, .btn-large, .btn-small {
+    color: #0d47a1;
+}
+/* Tagline Parallax*/
+.parallax-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the container height to make it full-screen */
+}
+#center-text {
+    text-align: center;
+    color: #64b5f6; 
+    font-size: 24px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+/* Social Media Get in Touch */
+#center-text-container {
+    text-align: center;
+    padding: 20px 0; /* Adjust top and bottom padding */
+  }
+  
+  #center-text {
+    font-size: 32px; /* Adjust the font size */
+    margin-bottom: 10px; /* Adjust the space between text and icons */
+  }
+  
+  .social-media-links {
+    text-align: center;
+  }
+  
+  .social-link {
+    font-size: 34px; /* Adjust the icon size */
+    margin: 5px; /* Adjust the spacing between icons */
+    color: #0077B5; /* Customize the color of the icons */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  /* Add hover effect if desired */
+  .social-link:hover {
+    color: #42a5f5; /* Change color on hover */
+  }
+  /* Photos */
+.image-resize{
+    max-height: 200px;
+}
+/* Videos */
+/* contacts */
+.section-contact h5 {
+    margin-bottom: 30px;
+  }
+.footer-container{
+    color: #1976d2;
+    font-weight: bold;
+}  
+.section-contact{
+    background-image: url('images/sliderimage1.jpg');
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* email */
+#emails{
+    font-style: italic;
+    text-decoration: underline;
+    color: #0d47a1;
+    font-weight:bold;
+}

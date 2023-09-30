@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/bf8ceb9fc2.js" crossorigin="anonymous"></script>
+    <!-- cdnjs font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Travel in the Philippines</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar-fixed">
+    <nav class="blue lighten-4">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">
+                    <span class="darker-text">Phil</span><span class="travel-text">Travel</span>
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#popular">Popular Places</a>
+                    </li>
+                    <li>
+                        <a href="#search">Search</a>
+                    </li>
+                    <li class="dropdown-trigger" data-target="gallery-dropdown">
+                        <a href="#!">Gallery<i class="material-icons right">arrow_drop_down</i></a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <button type="button" class="button waves-effect waves-light blue lighten-2" id="button1">Log Out</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!-- Side Navbar -->
+<ul class="sidenav blue lighten-4" id="mobile-demo">
+    <li>
+        <div class="user-view">
+            <div class="background">
+                <img src="images/sliderimage2.jpg">
+            </div>
+            <a href="#user"><img class="circle" src="images/user.jpg"></a>
+            <a href="#name"><span class="white-text name">Shiela Mae Mangco</span></a>
+            <a href="#email"><span class="white-text email">mangcoshielamae14@gmail.com</span></a>
+        </div>
+    </li>
+    <li>
+        <a href="#home">Home</a>
+    </li>
+    <li>
+        <a href="#popular">Popular Places</a>
+    </li>
+    <li>
+        <a href="#search">Search</a>
+    </li>
+    <li class="dropdown-trigger" data-target="gallery-dropdown-mobile">
+        <a href="#!">Gallery<i class="material-icons right">arrow_drop_down</i></a>
+    </li>
+    <li>
+        <a href="#contact">Contact</a>
+    </li>
+    <li><button type="button" class="button waves-effect waves-light blue lighten-2" id="button1">Log Out</button></li>
+</ul>
+
+<!-- Dropdown Structure for Desktop -->
+<ul id="gallery-dropdown" class="dropdown-content blue lighten-4">
+    <li><a href="#photos">Photos</a></li>
+    <li><a href="#videos">Videos</a></li>
+</ul>
+
+<!-- Dropdown Structure for Mobile -->
+<ul id="gallery-dropdown-mobile" class="dropdown-content blue lighten-4">
+    <li><a href="#photos">Photos</a></li>
+    <li><a href="#videos">Videos</a></li>
+</ul>
+
+<!-- Section Slider -->
+<section class="slider scrollSpy" id="home">
+ <ul class="slides">
+  <li>
+    <video autoplay loop muted plays-inline class="back-video"><source src="siargaofinal.mp4" type="video/mp4"></video>
+    <div class="caption center-align">
+      <h2 class="white-text">Ride the Waves in Siargao!</h2>
+      <h5 class="light grey-text text-lighten-3 hide-on-small-only">Dive into the surf culture, explore hidden lagoons, and relax on pristine beaches. Siargao offers adventure and relaxation in equal measure.</h5>
+      <button type="button" class="buttton waves-effect waves-light blue lighten-2" id="button">Learn More</button>
+    </div>
+    <div class="container" style="height: 600px; position: relative;">
+      <a href="#getintouch"><h3 id="bottom-text">Get in Touch with Us</h3></a>
+    </div>
+  </li>
+  <li>
+    <video autoplay loop muted plays-inline class="back-video"><source src="boracayfinal.mp4" type="video/mp4"></video>
+    <div class="caption center-align">
+      <h2 class="white-text">Bask in Boracay's Beach Bliss!</h2>
+      <h5 class="light grey-text text-lighten-3 hide-on-small-only">Discover the world-renowned white sandy beaches and vibrant nightlife of Boracay, where every sunset paints a masterpiece.</h5>
+      <button type="button" class="buttton waves-effect waves-light blue lighten-2" id="button">Learn More</button>
+    </div>
+      <div class="container" style="height: 600px; position: relative;">
+        <a href="#getintouch"><h3 id="bottom-text">Get in Touch with Us</h3></a>
+      </div>
+  </li>
+    <li>
+      <video autoplay loop muted plays-inline class="back-video"><source src="banauefinal.mp4" type="video/mp4"></video>
+      <div class="caption right-align">
+        <h2 class="white-text">Step into the Marvel of Banaue!</h2>
+        <h5 class="light grey-text text-lighten-3 hide-on-small-only">Experience the awe-inspiring beauty of the Banaue Rice Terraces, often referred to as the 'Eighth Wonder of the World.' Immerse yourself in centuries-old culture and stunning landscapes.</h5>
+        <button type="button" class="buttton waves-effect waves-light blue lighten-2" id="button">Learn More</button>
+      </div>
+      <div class="container" style="height: 600px; position: relative;">
+        <a href="#getintouch"><h3 id="bottom-text">Get in Touch with Us</h3></a>
+      </div>
+    </li>
+    <li>
+      <video autoplay loop muted plays-inline class="back-video"><source src="elnido.mp4" type="video/mp4"></video>
+      <div class="caption left-align">
+        <h2 class="white-text">El Nido: Where Adventure Meets Paradise</h2>
+        <h5 class="light grey-text text-lighten-3 hide-on-small-only">Explore the breathtaking limestone cliffs, hidden lagoons, and crystal-clear waters of El Nido, Palawan. It's a natural wonderland waiting to be explored.</h5>
+        <button type="button" class="buttton waves-effect waves-light blue lighten-2" id="button">Learn More</button>
+      </div>
+      <div class="container" style="height: 600px; position: relative;">
+        <a href="#getintouch"><h3 id="bottom-text">Get in Touch with Us</h3></a>
+      </div>
+    </li>
+    <li>
+      <video autoplay loop muted plays-inline class="back-video"><source src="puertofinal.mp4" type="video/mp4"></video>
+      <div class="caption center-align">
+        <h2 class="white-text">Puerto Galera: Your Tropical Haven</h2>
+        <h5 class="light grey-text text-lighten-3 hide-on-small-only">Escape to the lush jungles, vibrant coral reefs, and secluded beaches of Puerto Galera, where every day is a chance to unwind in paradise.</h5>
+        <button type="button" class="buttton waves-effect waves-light blue lighten-2" id="button">Learn More</button>
+      </div>
+      <div class="container" style="height: 600px; position: relative;">
+        <a href="#getintouch"><h3 id="bottom-text">Get in Touch with Us</h3></a>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<!-- Popular Places -->
+<section id="popular" class="section blue lighten-4 section-popular scrollspy ">
+  <div class="container">
+    <div class="row">
+      <h3 class="center">
+        <span class="text">Popular</span> Places</h3>
+        <!-- Place 1 -->
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/elnido2.jpg" alt="">
+            <span class="card-title">El Nido</span>
+          </div>
+          <div class="card-content">
+              <a href="" class="brand-logo left black-text" style="font-weight: bold;">
+              <i class="fa-solid fa-location-dot"></i> Location: Palawan, Philippines</a>
+            <br>
+            <p>El Nido is known for white-sand beaches, coral reefs and as the gateway to the Bacuit archipelago, a group of islands with steep karst cliffs. Palawan Island Philippines is the largest island. The island is half desert, so still undeveloped. <br>
+              <a href="https://www.palawanisland.org/" class="post-content">Read More Here</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Place 2 -->
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/Siargao5.jpg" alt="">
+            <span class="card-title">Siargao Road</span>
+          </div>
+          <div class="card-content">
+            <a href="" class="brand-logo left black-text" style="font-weight: bold;">
+              <i class="fa-solid fa-location-dot"></i> Location: Siargao, Philippines</a><br>
+            <p>Siargao's a country's famous tourist destination, well-known for its many surfing spots and featured in the film 'Siargao' for such qualities. Siargao’s focal point for visitors is General Luna (GL), while the island’s main town, Dapa Town, has grocery shops, a pharmacy, restaurants and cafés.
+              <br><a href="https://www.itsmorefuninthephilippines.co.uk/siargao/" class="post-content">Read More Here</a>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Pace 3 -->
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/sliderimage1.jpg" alt="">
+            <span class="card-title">Puerto Galera</span>
+          </div>
+          <div class="card-content">
+            <a href="" class="brand-logo left black-text" style="font-weight: bold;">
+              <i class="fa-solid fa-location-dot"></i> Location: Oriental Mindoro, Philippines</a><br>
+            <p>Puerto Galera is popular among all nature and beach lovers. Other reason is that its long curve of White Beach is backed by bars and resorts. Inland, a forest trail leads to secluded Talipanan Falls, and a hillside 9-hole golf course sits above the coast. <br>
+              <a href="https://www.amazingpuertogalera.com/" class="post-content">Read More Here</a>
+            </p>
+          </div>
+        </div>
+      </div>
+         <!-- Place 4 -->
+         <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/sliderimage3.jpg" alt="">
+              <span class="card-title">Banaue Rice Terraces</span>
+            </div>
+            <div class="card-content">
+                <a href="" class="brand-logo left black-text" style="font-weight: bold;">
+                <i class="fa-solid fa-location-dot"></i> Location: Ifugao , Philippines</a>
+              <br>
+              <!-- <p>El Nido is known for white-sand beaches, coral reefs and as the gateway to the Bacuit archipelago, a group of islands with steep karst cliffs.
+              </p> -->
+              <p>The Banaue Rice Terraces are a National Cultural Treasure of the Philippines and are considered to be the 8th Natural Wonder of the World by many Filipinos. The terraces are carved in the mountains of Ifugao and were most likely done by hand.<br>
+                <a href="http://www.banaueterraces.com/" class="post-content">Read More Here</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Place 5 -->
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/boracay5.jpg" alt="">
+              <span class="card-title">Boracay Island</span>
+            </div>
+            <div class="card-content">
+              <a href="" class="brand-logo left black-text" style="font-weight: bold;">
+                <i class="fa-solid fa-location-dot"></i> Location: AKlan, Philippines</a><br>
+              <!-- <p>Siargao is a famous tourist destination, well-known for its many surfing spots and featured in the film Siargao for such qualities.
+              </p> -->
+              <p>Boracay Island's White Beach is the most famous beach in the Philippines because of its its crystal blue water, its pure white sand, and its magical sunsets. For more relaxing interludes, award-winning beaches beckon, as do island-hopping trips and cultural pursuits ranging from beach meditation sessions and yoga to local cookery lessons.<br>
+                <a href="https://www.itsmorefuninthephilippines.co.uk/boracay/" class="post-content">Read More Here</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Pace 6 -->
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/taal1.jpg" alt="">
+              <span class="card-title">Taal Volcano</span>
+            </div>
+            <div class="card-content">
+              <a href="" class="brand-logo left black-text" style="font-weight: bold;">
+                <i class="fa-solid fa-location-dot"></i> Location: Batangas, Philippines</a><br>
+              <!-- <p>Puerto Galera is known for its dive sites and beaches. The long curve of White Beach is backed by bars and resorts.
+              </p> -->
+              <p>Taal Volcano is known to be the second most active volcano in the Philippines located in the province of Batangas. Taal Volcano is a large caldera in Batangas that was formed by prehistoric eruptions. In the wake of the eruptions, it was eventually filled by Taal Lake. <br>
+                <a href="https://guidetothephilippines.ph/destinations-and-attractions/taal-volcano" class="post-content">Read More Here</a>
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- Contact Button -->
+    <div class="row">
+      <div class="col s12 center">
+        <a href="#contact" class="btn waves-effect waves-light btn-large blue lighten-2">
+          <i class="material-icons blue-icon left">send</i> Contact For Booking
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section: Search -->
+<section id="search" class="section-search center">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12">
+        <h3 class="center scrollspy"><span class="text">Search</span> Destinations</h3>
+        <div class="input-field">
+          <input class="white grey-text autocomplete" placeholder="Boracay, Palawan, etc..." type="text" id="autocomplete-input">
+        </div>
+      </div>
+</div>
+</div>
+      <!-- Card Panel 1 -->
+      <div class="container">
+        <div class="row">
+          <div class=" s12 col m7 push-m5">  
+            <div class="card">
+              <div class="card-image">
+                  <img src="images/cardpanelimage.jpg">
+                  <span class="card-title" style="font-weight: bold;">Santa Fe, Philippines</span>
+              </div>
+              <div class="card-content" style="width: 100%; height: 40%; text-align: justify; overflow: auto;">
+                  <ul>
+                      <li>
+                          <a href="" class="brand-logo left black-text" style="font-weight: bold;">
+                              <i class="fa-solid fa-location-dot"></i> Location: Santa Fe, Cebu, Philippines
+                          </a>
+                      </li>
+                  </ul>
+                  <br>
+                  <p>Santa Fe Municipality is one of Bantayan Island’s municipalities of Cebu Province, Visayas, the Philippines. Bantayan Island is one of the most popular islands of Cebu. On that island, Santa Fe is the most popular due to its white and long stretches of sandy beach.</p>
+              </div>
+              <div class="card-action" style="width: 100%; text-align: left;">
+                  <blockquote><a href="https://www.travelingcebu.com/santa-fe-municipality.html" class="post-content">Read More ABout Santa Fe Here</a></blockquote>
+              </div>
+          </div>
+          </div>
+          <div class="s12 col m5 pull-m7">
+            <h4 class="text hide-on-small-only" style="text-align: center;">Top 1 Most Visited Tousist Desitination in the Philippines</h4>
+            <br><br>
+              <blockquote>
+                <p class="white-text hide-on-small-only">"Cebu is the country’s #1 most visited tourist destination, and for good reason. It is unrivaled in offering the widest range of things to do and attractions. Cebu is like the “Jack of all trades” among tourist spots in the Philippine"</p>
+              </blockquote>
+        </div>
+        </div>
+      </div>
+      <br>
+</section>
+
+<!-- Gallery Section -->
+<section class="gallery scrollspy" id="getintouch">
+  <div class="parallax-container" style="height: 400px;">
+    <div class="parallax"><img src="images/explore.jpg"></div>
+    <div id="center-text-container">
+      <h1 id="center-text">"Discover Paradise: Explore the Beauty of the Philippines"</h1>
+      <div class="social-media-links">
+        <a href="https://www.facebook.com/PhilippineTravelJP" class="social-link"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/tourism_phl/" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/TourismPHL" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/@TourismPhilippines" class="social-link"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Photos Section -->
+<section id="photos" class="section-photos scrollspy blue lighten-4">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12">
+        <h3 class="center scrollspy"><span class="text">Photo</span> Gallery</h3>
+      </div>
+      <div class="col s6 m3">
+        <img class="materialboxed responsive-img image-resize" src="images/boracay4.jpg" alt="">
+      </div>
+      <div class="col s6 m3">
+        <img class="materialboxed responsive-img image-resize" src="images/boracay2.jpg" alt="">
+      </div>
+      <div class="col s6 m3">
+        <img class="materialboxed responsive-img image-resize" src="images/boracay3.jpg" alt="">
+      </div>
+      <div class="col s6 m3">
+        <img class="materialboxed responsive-img image-resize" src="images/boracay4.jpg" alt="">
+      </div>
+    </div>
+    <br>
+      <div class="row">
+        <div class="col s6 m3">
+          <img class="materialboxed responsive-img image-resize" src="images/elnido1.jpg" alt="">
+        </div>
+        <div class="col s6 m3">
+          <img class="materialboxed responsive-img image-resize" src="images/elnido2.jpg" alt="">
+        </div>
+        <div class="col s6 m3">
+          <img class="materialboxed responsive-img image-resize" src="images/elnido1.jpg" alt="">
+        </div>
+        <div class="col s6 m3">
+          <img class="materialboxed responsive-img image-resize" src="images/Siargao5.jpg" alt="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col s6 m3">
+          <img class="materialboxed responsive-img image-resize" src="images/sliderimage2.jpg" alt="">
+        </div>
+        <div class="col s6 m3">
+          <img class="materialboxed responsive-img image-resize" src="images/taal1.jpg" alt="">
+        </div>
+        <div class="col s6 m3">
+          <img class="materialboxed responsive-img image-resize" src="images/mayon1.jpg" alt="">
+        </div>
+        <div class="col s6 m3">
+          <img class="materialboxed responsive-img image-resize" src="images/taal1.jpg" alt="">
+        </div>
+      </div>
+</div>
+  <br>
+</section>
+
+<!-- Section Video -->
+  <div class="divider blue darken-4"></div>
+<section id="videos" class="section-videos scrollspy blue lighten-4">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12">
+        <h3 class="center scrollspy"><span class="text">Video</span> Gallery</h3>
+      </div>
+      <div class="row">
+        <div class="col s12 m10 offset-m1">
+          <div class="carousel carousel-slider">
+            <a class="carousel-item" href="#one!"><iframe width="853" height="480" src="https://www.youtube.com/embed/n5f7pi0JDCo" title="Wake Up in SIARGAO | Philippines Tourism Ad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+            <a class="carousel-item" href="#two!"><iframe width="853" height="480" src="https://www.youtube.com/embed/FkKN_hb-K9g" title="Diving Destinations in the Philippines | Puerto Galera" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+            <a class="carousel-item" href="#three!"><iframe width="853" height="480" src="https://www.youtube.com/embed/R7OTRH5rzy8" title="Virtual Tour | It&#39;s More Fun with You in Boracay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+            <a class="carousel-item" href="#four!"><iframe width="853" height="480" src="https://www.youtube.com/embed/5myfOaVzKw0" title="Virtual Tour | It&#39;s More Fun with You in El Nido" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</section>
+
+<!-- Section: Contact -->
+<section id="contact" class="section-contact scrollspy">
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card-panel blue lighten-2 white-text center">
+          <i class="material-icons medium">email</i>
+          <h5 id="emails">Contact Us For Booking</h5>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus sed praesentium delectus. Sit, mollitia
+            quo. Veniam repellat voluptas ipsum doloremque?</p>
+            <a href="mailto:mangcoshielamae14@gmail.com" id="emails">Send an E-mail</a>
+        </div>
+        <ul class="collection with-header">
+          <li class="collection-header">
+            <h4>Location</h4>
+          </li>
+          <li class="collection-item">Philtravel Agency</li>
+          <li class="collection-item">Southville 1, Niugan, Cabuyao</li>
+          <li class="collection-item">Laguna, Philippines</li>
+        </ul>
+      </div>
+      <div class="col s12 m6">
+        <div class="card-panel grey lighten-3">
+          <h5>Please fill out this form</h5>
+          <div class="input-field">
+            <i class="material-icons prefix">person</i>
+            <input type="text" placeholder="Name" id="name">
+            <label for="name">Name</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" placeholder="Email" id="email">
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">phone</i>
+            <input type="text" placeholder="Phone" id="phone">
+            <label for="phone">Phone</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea class="materialize-textarea" placeholder="Enter Message" id="message"></textarea>
+            <label for="message">Message</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">today</i>
+            <input type="date" placeholder="Select Date" id="date" class="datepicker">
+            <label for="date">Select Date</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">schedule</i>
+            <input type="time" placeholder="Select Time" id="time" class="timepicker">
+            <label for="time">Select Time</label>
+          </div>
+          
+
+          <input type="submit" value="Submit" class="btn waves-effect waves-light blue lighten-2">
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</section>
+
+   <!-- Footer -->
+   <footer class="page-footer blue lighten-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="scrollspy"><span class="text">Phil</span> Travel</h5>
+          <p class="blue-text">Southville 1, Niugan, Cabuyao, Laguna
+            <br>
+            Operating Hours/Time
+            <br>
+            Mon – Fri, 9 a.m. – 6 p.m. (PST)
+            <br>
+            staff@vphiltravel.net
+          </p>
+        </div>
+        <!-- Links -->
+        <div class="col l4 offset-l2 s12">
+          <h5 class="blue-text">Social Media Links</h5>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/PhilippineTravelJP
+              " class="brand-logo">
+              <i class="fa-brands fa-facebook"></i> Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/tourism_phl/
+            " class="brand-logo">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/TourismPHL" class="brand-logo">
+          <i class="fa-brands fa-twitter"></i> Twitter
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/@TourismPhilippines" class="brand-logo">
+        <i class="fa-brands fa-youtube"></i> Youtube
+      </a>
+    </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="footer-container">
+          © 2023 Philippine Travel Organization. All rights reserved
+          </div>
+      </div>
+    </div>
+  </footer>
+
+      
+     <!-- jquery cdn -->
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+     <script>
+      // video
+       function videoslider(links){
+            document.querySelector(".slider").src = links;
+        }
+       $(document).ready(function(){
+         // Material Boxed
+    const mb = document.querySelectorAll('.materialboxed');
+    M.Materialbox.init(mb, {});
+
+        // Dropdown init
+        $('.dropdown-trigger').dropdown();
+        
+        // Auto Complete init
+        const ac = document.querySelector('.autocomplete');
+    M.Autocomplete.init(ac, {
+        data: {
+          "Boracay": null,
+          "Palawan": null,
+          "Siargao": null,
+          "El Nido": null,
+          "Puerto Galera": null,
+          "Banaue Rice Terraces": null
+        }
+      });
+
+        // Slider
+        const slider = document.querySelector('.slider');
+    M.Slider.init(slider, {
+        indicators: false,
+        height: 670,
+        transition: 500,
+        interval: 6000
+      });
+       
+        $('select').formSelect();
+        // Scroll Spy
+        $('.scrollspy').scrollSpy({
+        });
+        // date picker
+        $('.datepicker').datepicker();
+        // Time picker
+        $('.timepicker').timepicker();
+        // parallax init
+        $('.parallax').parallax();
+
+        // carousel init
+        $('.carousel').carousel(
+          {
+            duration: 400,
+            dist: -100,
+            shift: 50,
+            padding: 40,
+            numVisible: 5
+          }
+        );
+        // carousel-slider
+        $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+        // sidenav init
+        $('.sidenav').sidenav(
+          {
+            edge: 'right'
+          }
+        );
+        // tabs init
+        $('.tabs').tabs();
+
+      });
+
+        
+
+     </script>
+</body>
+</html>
