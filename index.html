@@ -100,9 +100,6 @@
       <h5 class="light grey-text text-lighten-3 hide-on-small-only">Dive into the surf culture, explore hidden lagoons, and relax on pristine beaches. Siargao offers adventure and relaxation in equal measure.</h5>
       <button type="button" class="buttton waves-effect waves-light blue lighten-2" id="button">Learn More</button>
     </div>
-    <div class="container" style="height: 600px; position: relative;">
-      <a href="#getintouch"><h3 id="bottom-text">Get in Touch with Us</h3></a>
-    </div>
   </li>
   <li>
     <video autoplay loop muted plays-inline class="back-video"><source src="boracayfinal.mp4" type="video/mp4"></video>
@@ -111,9 +108,6 @@
       <h5 class="light grey-text text-lighten-3 hide-on-small-only">Discover the world-renowned white sandy beaches and vibrant nightlife of Boracay, where every sunset paints a masterpiece.</h5>
       <button type="button" class="buttton waves-effect waves-light blue lighten-2" id="button">Learn More</button>
     </div>
-      <div class="container" style="height: 600px; position: relative;">
-        <a href="#getintouch"><h3 id="bottom-text">Get in Touch with Us</h3></a>
-      </div>
   </li>
     <li>
       <video autoplay loop muted plays-inline class="back-video"><source src="banauefinal.mp4" type="video/mp4"></video>
@@ -121,9 +115,6 @@
         <h2 class="white-text">Step into the Marvel of Banaue!</h2>
         <h5 class="light grey-text text-lighten-3 hide-on-small-only">Experience the awe-inspiring beauty of the Banaue Rice Terraces, often referred to as the 'Eighth Wonder of the World.' Immerse yourself in centuries-old culture and stunning landscapes.</h5>
         <button type="button" class="buttton waves-effect waves-light blue lighten-2" id="button">Learn More</button>
-      </div>
-      <div class="container" style="height: 600px; position: relative;">
-        <a href="#getintouch"><h3 id="bottom-text">Get in Touch with Us</h3></a>
       </div>
     </li>
     <li>
@@ -133,9 +124,6 @@
         <h5 class="light grey-text text-lighten-3 hide-on-small-only">Explore the breathtaking limestone cliffs, hidden lagoons, and crystal-clear waters of El Nido, Palawan. It's a natural wonderland waiting to be explored.</h5>
         <button type="button" class="buttton waves-effect waves-light blue lighten-2" id="button">Learn More</button>
       </div>
-      <div class="container" style="height: 600px; position: relative;">
-        <a href="#getintouch"><h3 id="bottom-text">Get in Touch with Us</h3></a>
-      </div>
     </li>
     <li>
       <video autoplay loop muted plays-inline class="back-video"><source src="puertofinal.mp4" type="video/mp4"></video>
@@ -143,9 +131,6 @@
         <h2 class="white-text">Puerto Galera: Your Tropical Haven</h2>
         <h5 class="light grey-text text-lighten-3 hide-on-small-only">Escape to the lush jungles, vibrant coral reefs, and secluded beaches of Puerto Galera, where every day is a chance to unwind in paradise.</h5>
         <button type="button" class="buttton waves-effect waves-light blue lighten-2" id="button">Learn More</button>
-      </div>
-      <div class="container" style="height: 600px; position: relative;">
-        <a href="#getintouch"><h3 id="bottom-text">Get in Touch with Us</h3></a>
       </div>
     </li>
   </ul>
@@ -318,6 +303,9 @@
               <blockquote>
                 <p class="white-text hide-on-small-only">"Cebu is the country’s #1 most visited tourist destination, and for good reason. It is unrivaled in offering the widest range of things to do and attractions. Cebu is like the “Jack of all trades” among tourist spots in the Philippine"</p>
               </blockquote>
+              <div class="container" style="height: 50px; position: relative;">
+                <a href="#getintouch"><h3 id="bottom-text">Get in Touch with Us</h3></a>
+              </div>
         </div>
         </div>
       </div>
@@ -458,22 +446,19 @@
             <label for="phone">Phone</label>
           </div>
           <div class="input-field">
-            <i class="material-icons prefix">message</i>
-            <textarea class="materialize-textarea" placeholder="Enter Message" id="message"></textarea>
-            <label for="message">Message</label>
+            <form action="">
+              <i class="material-icons prefix">today</i>
+              <label for="">Select Date:</label>
+              <input type="text" placeholder="Select Date" class="datepicker">
+            </form>
           </div>
           <div class="input-field">
-            <i class="material-icons prefix">today</i>
-            <input type="date" placeholder="Select Date" id="date" class="datepicker">
-            <label for="date">Select Date</label>
-          </div>
-          <div class="input-field">
+            <form action="">
             <i class="material-icons prefix">schedule</i>
-            <input type="time" placeholder="Select Time" id="time" class="timepicker">
             <label for="time">Select Time</label>
+            <input type="text" placeholder="Select Time" id="time" class="timepicker">
+            </form>
           </div>
-          
-
           <input type="submit" value="Submit" class="btn waves-effect waves-light blue lighten-2">
         </div>
       </div>
